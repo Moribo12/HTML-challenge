@@ -19,8 +19,9 @@ body{
     flex: 100%;
 }
 
-.video video{
+.video iframe{
     width: 100%;
+    height: 80vh;
     object-fit: cover;
 }
 /* End of videoArea */
@@ -39,9 +40,6 @@ body{
 .content_account{
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center;
-    padding: 10px 0;
-    justify-content: space-between; */
 }
 
 .icon_nav{
@@ -49,8 +47,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
     padding: 10px 0;
-     justify-content: space-evenly;
-}
+    width:100%;
+    height: 100%;
+    }
 
 .content_profile{
   flex:50%;
@@ -58,7 +57,7 @@ body{
 
 .buttons{
    flex: 50%;
-
+   padding-left: 80px;
 }
 .content_profile img{
     border-radius: 50%;
@@ -69,7 +68,7 @@ body{
 .content_profile{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+   
 }
 
 .content_profile button{
@@ -88,10 +87,6 @@ body{
     font-weight: 600;
     font-size: 16px;
 }
-
-/* .yes{
-    align-items: center;
-} */
 
 .name span{
     font-size: 14px;
@@ -195,6 +190,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .video1{
@@ -204,27 +200,14 @@ body{
 .video2{
     flex: 13%; 
 }
+.iframe_vids{
+    width: 100%;
+    height: 23vh;
+    padding: 0 10px;
+}
 
 .video3{
     flex: 13%;
-}
-
-.video1 img{
-    padding: 0 10px;
-    width: 100%;
-    height: 100%;
-}
-
-.video2 img{
-    padding: 0 10px;
-    width: 100%;
-    height: 100%;
-}
-
-.video3 img{
-    padding: 0 10px;
-    width: 100%;
-    height: 100%;
 }
 
 .shorts h5{
@@ -260,31 +243,47 @@ body{
 /* start of playlist */
 
 .playlist{
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     margin-top: 40px;
 }
 
 .playlist_video{
     flex: 20%;
-    background-color: yellow;
 }
 
 .playlist_text{
     flex: 20%;
-    background-color: red;
-   
-}
-.title{
-
 }
 
-.title_context{
-    padding: 10px 0;
+.playlist_text p{
+   padding-top:20px;
+   font-size: 15px;
 }
 
 
+.playlist_video iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.playlist_text h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.playlist_text span{
+    font-size: 15px;
+}
+
+.playlist1{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
 
 
 
